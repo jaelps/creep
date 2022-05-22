@@ -20,13 +20,15 @@ const handleNovoItem = (evento) => {
     const criaTarefa = criarTarefa(dados)
 
     lista.appendChild(criaTarefa)
+    
+
     input.value = " "
 }
 
 
 const criarTarefa = ({valor, dataFormatada}) => {
     
-    
+
     const tarefa = document.createElement('li')
     tarefa.classList.add('task')
     const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`
