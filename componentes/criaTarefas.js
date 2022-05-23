@@ -1,3 +1,4 @@
+import { carregaTarefa } from './carregaTarefa.js'
 import BotaoConclui from './concluirTarefa.js'
 import BotaoDeleta from './deletaTarefa.js'
   
@@ -27,6 +28,8 @@ export const handleNovoItem = (evento) => {
     
 
     input.value = " "
+
+    carregaTarefa()
 }
 
 
